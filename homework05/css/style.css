@@ -1,0 +1,149 @@
+@import url("reset.css");
+@import url("media-queries.css");
+
+/* Global Variables */
+:root {
+    /* color */
+  --color-black:#090909;
+  --color-red: #FF0000;
+  --color-yellow: #ffff00;
+  --color-white: #fff;
+  --color-grey: #8A8A8A;
+  --color-light-grey: #d3d3d3;
+}
+
+/* Global Layout */
+html {
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--color-grey);
+    color: var(--color-black);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Typography */
+h1 {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+/* Navigation */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid var(--color-grey);
+}
+
+a {
+    color: var(--color-red);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.15rem;
+}
+
+a:hover {
+    background-color: var(--color-yellow);
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    padding-right: 8px;
+}
+
+/* Content Page */
+section {
+    padding: 20px;
+}
+
+section h2 {
+    border-bottom: 1px solid var(--color-black);
+}
+
+article {
+    background-color: var(--color-light-grey);
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 200px;
+}
+
+h2 {
+    padding: 10px 0;
+    margin: 0 10px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 50px;
+    text-align: center;
+}
+
+/* 
+------------
+ Id Selectors
+------------
+*/
+#wrapper {
+    background-color: var(--color-white);
+    width: 100%;
+    min-height: 100vh;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr auto;  
+}
+
+#welcome_container,
+#news_container,
+#local_container,
+#more_container {
+    padding-top: 20px;
+}
+
+/* Welcome Section */
+#welcome h2 {
+    border-bottom: 1px solid var(--color-black);
+}
+
+/* Welcome Aside */
+#welcome_aside section {
+    display: grid;
+    grid-gap: 20px;
+}
+
+#follow p {
+    padding: 10px 5px;
+    border: 1px solid var(--color-grey);
+}
